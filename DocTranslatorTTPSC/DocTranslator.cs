@@ -33,7 +33,7 @@ namespace DocTranslatorTTPSC
             var input = new DocumentTranslationInput(new TranslationSource(new Uri(_blobService.GenerateBlobSasToken("documentspl", name, permissions))), new TranslationTarget[]
             {
                 new TranslationTarget(
-                    new Uri(_blobService.GenerateContainerSasToken("translated-documentspl", permissions)), "eng")
+                    new Uri(_blobService.GenerateContainerSasToken("translated-documentspl", permissions)), "en")
             })
             {
                 StorageUriKind = StorageInputUriKind.File
